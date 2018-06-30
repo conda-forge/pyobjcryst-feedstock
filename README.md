@@ -14,14 +14,16 @@ Summary: Python bindings to the ObjCryst++ crystallographic library.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyobjcryst-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyobjcryst-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyobjcryst-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyobjcryst-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pyobjcryst-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pyobjcryst-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pyobjcryst-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pyobjcryst-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyobjcryst/badges/version.svg)](https://anaconda.org/conda-forge/pyobjcryst)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyobjcryst/badges/downloads.svg)](https://anaconda.org/conda-forge/pyobjcryst)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyobjcryst-green.svg)](https://anaconda.org/conda-forge/pyobjcryst) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyobjcryst.svg)](https://anaconda.org/conda-forge/pyobjcryst) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyobjcryst.svg)](https://anaconda.org/conda-forge/pyobjcryst) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyobjcryst.svg)](https://anaconda.org/conda-forge/pyobjcryst) |
 
 Installing pyobjcryst
 =====================
