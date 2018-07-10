@@ -13,6 +13,7 @@ source:
   patches:
     - scattering.patch
     - boostpythonsuffixes.patch
+    - unitcell.patch
 
 build:
   number: 2
