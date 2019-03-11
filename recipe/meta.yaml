@@ -18,7 +18,6 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
     - python
@@ -27,10 +26,10 @@ requirements:
     - libobjcryst 2017.1.*
     - boost
   run:
+    # NOTE libobjcryst is implicitly added by libobjcryst run_exports
     - python
     - setuptools
     - {{ pin_compatible('numpy') }}
-    - libobjcryst 2017.1.*
     - boost
 
 test:
