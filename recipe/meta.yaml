@@ -23,7 +23,7 @@ requirements:
     - python
     - setuptools
     - numpy
-    - libobjcryst 2017.1.*
+    - libobjcryst 2017.2.*
     - boost
   run:
     # NOTE libobjcryst is implicitly added by libobjcryst run_exports
