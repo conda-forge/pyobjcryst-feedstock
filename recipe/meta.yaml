@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2.0.2" %}
-{% set sha256 = "b48b1a66973dc42d8d15c5ddcf4989cb4160cab220c3a3c60664af46926092d4" %}
+{% set version = "2.1.0.post2" %}
+{% set sha256 = "2ee797cf4d0ba90a7d144110b0f3295ee7fa73462c648297100bfd5eb467bb6d" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
     - unitcell.patch
 
 build:
-  number: 1002
+  number: 0
   skip: True  # [win or py2k]
   script: python setup.py install
 
