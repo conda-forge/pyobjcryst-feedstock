@@ -12,15 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True  # [win or py2k]
-  script: python setup.py install
+  number: 1
+  skip: True  # [win]
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - {{ compiler('cxx') }}
   host:
     - python
+    - pip
     - setuptools
     - numpy
     - libobjcryst 2017.2.*
