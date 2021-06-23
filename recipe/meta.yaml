@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "930c51f221cbc8895d7bde152f134ad26269ceb666415fa8b701e5cd369a9dbb" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "c02fda861db03b081e64320fdb1c14223137999d3ffc6d4cd322c333ea9cb975" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/diffpy/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 5
+  number: 0
   skip: True  # [win]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -24,7 +24,7 @@ requirements:
     - pip
     - setuptools
     - numpy
-    - libobjcryst 2017.2.*
+    - libobjcryst 2021.1.1
     - boost
   run:
     # NOTE libobjcryst is implicitly added by libobjcryst run_exports
@@ -51,3 +51,5 @@ extra:
   recipe-maintainers:
     - CJ-Wright
     - pavoljuhas
+    - st3107
+    - sbillinge
