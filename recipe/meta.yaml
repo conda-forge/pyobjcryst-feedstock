@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/diffpy/pyobjcryst
-  license: BNL
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Python bindings to the ObjCryst++ crystallographic library.
