@@ -3,7 +3,7 @@ About pyobjcryst
 
 Home: https://github.com/diffpy/pyobjcryst
 
-Package license: BNL
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyobjcryst-feedstock/blob/master/LICENSE.txt)
 
