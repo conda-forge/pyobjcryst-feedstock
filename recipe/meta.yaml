@@ -34,6 +34,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - setuptools
     - boost
+    - python
 
 test:
   imports:
