@@ -27,7 +27,7 @@ requirements:
     - pip
     - setuptools
     - numpy
-    - libobjcryst 2021.1.2
+    - libobjcryst 2022.1.2
     - boost
   run:
     # NOTE libobjcryst is implicitly added by libobjcryst run_exports
