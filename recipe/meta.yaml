@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2.2.2" %}
-{% set sha256 = "f04bbd412ee0b9d3c8f2cccdfabe157ec703bc21f9fcb2b820caf3777d660ca8" %}
+{% set version = "2.2.3" %}
+{% set sha256 = "e156b47a0ba0dfc0bd9592a121b4849c2674da530705235c88e6cbc16e539c2e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  skip: true  # [win]
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - numpy
-    - libobjcryst 2021.1.2
+    - libobjcryst 2022.1.2
     - boost
   run:
     # NOTE libobjcryst is implicitly added by libobjcryst run_exports
@@ -47,7 +46,7 @@ about:
   license_family: BSD
   license_file: LICENSE.txt
   summary: Python bindings to the ObjCryst++ crystallographic library.
-  doc_url: http://diffpy.github.io/pyobjcryst
+  doc_url: https://pyobjcryst.readthedocs.io/
   dev_url: https://github.com/diffpy/pyobjcryst
 
 extra:
