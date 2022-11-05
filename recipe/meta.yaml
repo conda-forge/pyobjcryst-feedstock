@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2.2.3" %}
-{% set sha256 = "2c917c663020eebf94861569eb0c1af600b3621864d31f74f65a65e7c88e081b" %}
+{% set version = "2.2.4" %}
+{% set sha256 = "dd54449d42f20b1d54e535b200cd0d86695bb02421536f0402ccc9e9d03bd445" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - numpy
-    - libobjcryst 2022.1.2
+    - libobjcryst 2022.1.3
     - boost
   run:
     # NOTE libobjcryst is implicitly added by libobjcryst run_exports
