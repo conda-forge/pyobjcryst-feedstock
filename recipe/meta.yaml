@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2.2.5" %}
-{% set sha256 = "e2177a6d2c7d0fd8a104f337674af64f2be2aa68bd26501d91be2f6f81eafaa1" %}
+{% set version = "2.2.6" %}
+{% set sha256 = "d130d62b73949ed8cb93777f61475676becd30fea590be400df1139f8e326fae" %}
 
 package:
   name: {{ name|lower }}
