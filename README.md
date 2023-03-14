@@ -1,11 +1,11 @@
-About pyobjcryst
-================
+About pyobjcryst-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyobjcryst-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/diffpy/pyobjcryst
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyobjcryst-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python bindings to the ObjCryst++ crystallographic library.
 
