@@ -1,3 +1,9 @@
+# downgrade windows image as a work-around for missing symbols, c.f.
+# https://github.com/actions/runner-images/issues/6091
+azure:
+  settings_win:
+    pool:
+      vmImage: windows-2019
 build_platform:
   osx_arm64: osx_64
 conda_build:
