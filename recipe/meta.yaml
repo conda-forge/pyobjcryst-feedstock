@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,13 +27,13 @@ requirements:
     - setuptools
     - numpy
     - libobjcryst 2022.1.4
-    - boost
+    - libboost-python-devel
   run:
     # NOTE libobjcryst is implicitly added by libobjcryst run_exports
     - python
     - setuptools
     - {{ pin_compatible('numpy') }}
-    - boost
+    - libboost-python-devel
     - packaging
 
 test:
