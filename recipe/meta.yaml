@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2.2.6" %}
-{% set sha256 = "d130d62b73949ed8cb93777f61475676becd30fea590be400df1139f8e326fae" %}
+{% set version = "2024.1" %}
+{% set sha256 = "f864ba0db3cd65aa8284e8c10ee9a4e1fdc8ec58cbb7cc4948cc09a25c5ba192" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
