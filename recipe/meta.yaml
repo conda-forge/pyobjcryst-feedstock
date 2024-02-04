@@ -33,7 +33,6 @@ requirements:
     - python
     - setuptools
     - {{ pin_compatible('numpy') }}
-    - libboost-python-devel
     - packaging
 
 test:
