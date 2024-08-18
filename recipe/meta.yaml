@@ -12,8 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true                                 # [python_impl == 'pypy']
 
 requirements:
   build:
