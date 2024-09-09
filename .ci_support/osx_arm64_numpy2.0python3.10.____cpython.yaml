@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '16'
+- '17'
 libboost_python_devel:
 - '1.86'
 macos_machine:
@@ -34,3 +34,4 @@ zip_keys:
 - - python
   - numpy
   - python_impl
+  - channel_sources
