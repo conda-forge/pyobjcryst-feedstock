@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2024.2.1" %}
-{% set sha256 = "98d979f258c6ffda6ea7f64a0e99a50ba65a21ea07d14ff38a585c4c63aec87f" %}
+{% set version = "2025.1.0" %}
+{% set sha256 = "215ab4e4700e7eca23952e554ebcecc83cb6346d49072ed1c2f94c94fd27ad4d" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/diffpy/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://github.com/diffpy/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
