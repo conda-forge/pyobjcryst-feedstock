@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2025.1.0rc.0" %}
-{% set sha256 = "ba6e383abbee41aaf7d358daa3c86a066ef897423c0d68aca33218028b7ef9a0" %}
+{% set version = "2025.1.0" %}
+{% set sha256 = "782c776de91d815cf74aff865fe002db99eff83a786c684dc9324460cd5fed5f" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/diffpy/{{ name }}/archive/refs/tags/2025.1.0-rc.0.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
