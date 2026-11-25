@@ -13,28 +13,36 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<312]
+  script:
+    - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv -Ccmake.define.BOOST_INCLUDE_DIR="$PREFIX/include"  # [unix]
+    - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv -Ccmake.define.BOOST_INCLUDE_DIR="%LIBRARY_INC%"    # [win]
+  skip: true  # [py < 312 or py >= 316]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - cmake
+    - ninja
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - numpy                               # [build_platform != target_platform]
+    - nanobind                            # [build_platform != target_platform]
+    - scikit-build-core >=0.10            # [build_platform != target_platform]
+    - setuptools-scm >=8                  # [build_platform != target_platform]
   host:
     - python
     - pip
-    - setuptools
-    - setuptools-git-versioning
+    - scikit-build-core >=0.10
+    - setuptools-scm >=8
+    - nanobind
     - numpy
-    - libobjcryst 2026.2.0
-    - libboost-python-devel
+    - libboost-headers
   run:
     - python
-    - setuptools
+    - numpy
+    - packaging
 
 test:
   source_files:
