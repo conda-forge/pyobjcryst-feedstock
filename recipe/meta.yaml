@@ -1,6 +1,6 @@
 {% set name = "pyobjcryst" %}
-{% set version = "2026.1.0" %}
-{% set sha256 = "0ca642db5d534bf24efce9a9f6d7c2e45026f5b0691fecb7fe8e69118535786e" %}
+{% set version = "2026.2.0" %}
+{% set sha256 = "7b2b0acb836ab168b0a179a13c0df6a09ceb6db3b409c4b1eed2545b04123415" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -50,8 +50,7 @@ about:
   home: https://github.com/diffpy/pyobjcryst
   license: LicenseRef-diffpy
   license_file: LICENSE.rst
-  summary: 'Open source (the license is 100% compatible with bsd-3 clause)
-    Python bindings to the ObjCryst++ crystallographic library.'
+  summary: 'Open source (the license is 100% compatible with bsd-3 clause) Python bindings to the ObjCryst++ crystallographic library.'
   doc_url: https://pyobjcryst.readthedocs.io/
   dev_url: https://github.com/diffpy/pyobjcryst
 
