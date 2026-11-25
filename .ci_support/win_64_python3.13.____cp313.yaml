@@ -12,7 +12,7 @@ cxx_compiler:
 - vs
 cxx_compiler_version:
 - '2022'
-libboost_python_devel:
+libboost_headers:
 - '1.90'
 numpy:
 - '2'
