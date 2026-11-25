@@ -16,7 +16,7 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '22'
-libboost_python_devel:
+libboost_headers:
 - '1.90'
 macos_machine:
 - x86_64-apple-darwin13.4.0
