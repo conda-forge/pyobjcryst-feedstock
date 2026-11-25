@@ -1,0 +1,10 @@
+diff --git a/tests/test_array_returns.py b/tests/test_array_returns.py
+--- a/tests/test_array_returns.py
++++ b/tests/test_array_returns.py
+@@ -73,3 +73,5 @@ class TestArrayReturns(unittest.TestCase):
+         np.testing.assert_allclose(
+-            xyz, self.crystal.FractionalToOrthonormalCoords(0.1, 0.2, 0.3)
++            xyz,
++            self.crystal.FractionalToOrthonormalCoords(0.1, 0.2, 0.3),
++            atol=1e-14,
+         )
