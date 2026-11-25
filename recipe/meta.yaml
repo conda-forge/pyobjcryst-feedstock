@@ -14,6 +14,7 @@ source:
 build:
   number: 0
   script:
+    - export CMAKE_GENERATOR=Ninja  # [unix]
     - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv -Ccmake.define.BOOST_INCLUDE_DIR="$PREFIX/include"  # [unix]
     - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv -Ccmake.define.BOOST_INCLUDE_DIR="%LIBRARY_INC%"    # [win]
   skip: true  # [py < 312 or py >= 316]
