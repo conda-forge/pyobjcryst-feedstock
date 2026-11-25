@@ -14,7 +14,7 @@ source:
     - coordinate-test-atol.patch
 
 build:
-  number: 0
+  number: 1
   script:
     - export CMAKE_GENERATOR=Ninja  # [unix]
     - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv -Ccmake.define.BOOST_INCLUDE_DIR="$PREFIX/include"  # [unix]
